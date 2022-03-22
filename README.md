@@ -33,9 +33,14 @@ Logstash is an open source data processing engine. It ingests data from multiple
 |metrics.livenessProbe.httpGet.path|Request path for livenessProbe|string|/metrics|
 |metrics.livenessProbe.httpGet.port|Port for livenessProbe|string|metrics|
 |metrics.livenessProbe.initialDelaySeconds|Initial delay seconds for livenessProbe|integer|60|
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
+|metrics.livenessProbe.periodSeconds|Period seconds for readinessProbe|integer|10|
+|metrics.livenessProbe.timeoutSeconds|Timeout seconds for readinessProbe|integer|5|
+|metrics.livenessProbe.failureThreshold|Failure threshold for readinessProbe|integer|6|
+|metrics.livenessProbe.successThreshold|Success threshold for readinessProbe|integer|1|
+|metrics.readinessProbe.httpGet.path|Request path for readinessProbe|string|/metrics|
+|metrics.readinessProbe.httpGet.port|Port for readinessProbe|string|metrics|
+|metrics.readinessProbe.initialDelaySeconds|Initial delay seconds for readinessProbe|integer|60|
+|metrics.readinessProbe.periodSeconds|Period seconds for readinessProbe|integer|10|
+|metrics.readinessProbe.timeoutSeconds|Timeout seconds for readinessProbe|integer|5|
+|metrics.readinessProbe.failureThreshold|Failure threshold for readinessProbe|integer|6|
+|metrics.readinessProbe.successThreshold|Success threshold for readinessProbe|integer|1|
